@@ -32,7 +32,7 @@ const Bio = () => {
         <img
           alt={author?.firstName || ``}
           className="bio-avatar"
-          src={profilePic}
+          src={avatarUrl}
         />
       )}
       {author?.firstName && (
