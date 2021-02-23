@@ -2,6 +2,7 @@ import React from "react"
 import { Link, useStaticQuery, graphql } from "gatsby"
 import parse from "html-react-parser"
 
+
 const Layout = ({ isHomePage, children }) => {
   const {
     wp: {
@@ -33,7 +34,6 @@ const Layout = ({ isHomePage, children }) => {
       </header>
 
       <main>{children}</main>
-
       <footer>
         © {new Date().getFullYear()}, Built with
         {` `}
