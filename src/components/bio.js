@@ -7,7 +7,6 @@
 
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import profilePic from '../../content/assets/images/profile.jpeg'
 
 const Bio = () => {
   const { author } = useStaticQuery(graphql`
@@ -15,6 +14,7 @@ const Bio = () => {
       # if there was more than one user, this would need to be filtered
       author: wpUser {
         firstName
+        lastName
         twitter: name
         description
         avatar {
@@ -37,15 +37,11 @@ const Bio = () => {
       )}
       {author?.firstName && (
         <p>
-          Written by <strong>{author.firstName}</strong>
+          Written by <strong>{author.firstName} {author.lastName}</strong>
           {` `}
           {author?.description || null}
           {` `}
-          {author?.twitter && (
-            <a href={`https://twitter.com/${author?.twitter || ``}`}>
-              You should follow them on Twitter
-            </a>
-          )}
+          
         </p>
       )}
     </div>
