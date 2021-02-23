@@ -1,12 +1,12 @@
 /* CSS Custom Properties Definitions */
 
 
-body{
+/* body{
   background-image: url('https://www.texastreetrimmers.com/wp-content/uploads/2016/10/Tree-Growth-from-Seedling.jpg');
   background-repeat: no-repeat;
   background-position-y: bottom;
   background-position-x: right;
-}
+} */
 :root {
   --maxWidth-none: "none";
   --maxWidth-xs: 20rem;
